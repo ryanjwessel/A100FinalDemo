@@ -1,0 +1,430 @@
+/* All style should go in this document. */
+
+/* CSS RESET */
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************** GLOBAL **************/
+
+p, h1, h2, h3, h4, li { 
+    font-family: Trebuchet MS, Helvetica; 
+    font-weight: 100; 
+}
+p, li { 
+    font-size: 18px;
+}
+
+/** NAV **/
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.navbar-default {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 2px 5px rgba(33, 33, 33, 1.0);
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFD740;
+}
+
+.navbar-nav>li>a {
+    padding: 40px 65px;
+}
+
+.pull-left img {
+  height: 70px;
+  margin-top: 15px;
+  margin-right: -30px;
+}
+.cambio {
+    background-color: rgba(255,255,255,0.95);
+}
+.butImNotAWrapper {
+    transition: all 1s;
+}
+/* HEADER */
+.wHeader img {
+    background-image: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.wHeader {
+  border-top: 100px solid #3E0394;
+  margin-bottom: -5px;
+}
+
+/* ABOUT */
+.aboutMe {
+    background-color: rgba(33, 33, 33, 1.0);
+    padding: 85px 0px;
+}
+
+.aboutMe h2, h3, h4 {
+    color: white;
+    text-align: center;
+}
+.aboutMe a {
+    color: white;
+    text-decoration: underline;
+}
+.aboutMe a:hover {
+    color: #e6e6e6;
+}
+
+.aboutMe h3 {
+    font-size: 18px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.aboutMe h2 {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.aboutMe h4 {
+    font-size: 16px;
+    padding-bottom: 85px;
+    color: white !important;
+}
+
+.portButton {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.portButton a {
+    border: 1px solid white;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 3px 3px white;
+}
+.portButton a:hover {
+    background-color: white;
+    color: rgba(32, 32, 32, 1.0);
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0px 0px rgba(0,0,0,0);
+}
+
+/* FOOTER */
+.footer {
+    padding: 70px 0px;
+    text-align: center;
+}
+.footer h4 {
+    color: rgba(32, 32, 32, 1.0);
+    font-size: 16px;
+    padding-bottom: 80px;
+}
+
+.mail {
+    width: 120px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}    
+
+.contact {
+    padding-bottom: 10px;
+    margin-top: -4px;
+}
+.contact a {
+    color: rgba(32, 32, 32, 1.0);
+    font-size: 36px;
+}
+.contact a:hover {
+    text-decoration: none;
+}
+.email {
+    text-decoration: underline;
+    padding-top: 25px;
+}
+a.email:hover {
+    color: #808080; 
+    text-decoration: underline;
+}
+
+.social {
+    padding-top: 70px;
+}
+.social img {
+    height: 50px;
+    padding: 0px 25px;
+}
+
+/** RESUME SECTION **/
+.resumePage {
+    background-color: #E6E6E6;
+}
+.paper {
+    margin: 150px 50px;
+    box-shadow: 3px 3px 5px #333333;
+    border: 1px solid black;
+    padding: 0px 14px 0px 14px;
+}
+/** HEADER **/
+
+#about {
+    padding: 100px 0px;
+    border-left: 1px solid black;
+    border-top: 0.5px solid black;
+    background-color: white;
+}
+#about h1, h2, a {
+    color: #101010;
+    text-decoration: none;
+    text-align: center;
+}
+#about h1 {
+    font-size: 72px;
+    text-shadow: 2px 2px 2px grey;
+    padding-bottom: 12.5px;
+}
+#about h2 {
+    font-size: 38px;
+    padding-bottom: 7.5px;
+    text-shadow: 1px 1px 2px grey;
+}
+#about a:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+/** SKILLS **/
+
+.skillbox { 
+    background-color: white;
+    width: 220px; 
+    height: 200px;
+    display: inline-block; 
+    padding: 10px 3px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 5px 5px 2px #2e2e2e;
+}
+.skillbox h3 { 
+    text-align: center; 
+    color: black;
+    font-weight: 600;
+    padding-top: 3px;
+}
+.skillimg { 
+    display: block;
+    height: 125px; 
+    margin: 5px auto;
+    padding-bottom: 5px;
+}
+
+#skills {
+    background-color: #4d4d4d;
+    padding: 80px;
+    border-left: 1px solid black;
+}
+#skills h2 {
+    font-size: 36px;
+    color: white;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+/** PORTFOLIO **/
+
+.portbox {
+    background-color: white;
+    width: 280px; 
+    height: 400px;
+    display: inline-block;  
+    padding: 10px 3px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 0px 30px 20px 30px;
+    box-shadow: 5px 5px 2px #1565C0;
+}
+.portbox h3 { 
+    text-align: center; 
+    color: black;
+    font-weight: 600;
+    padding-top: 3px;
+}
+.portbox ul {
+    padding-top: 20px;
+}
+.portbox li {
+    color: black;
+    padding: 0px 5px 10px 5px;
+}
+
+.portimg {
+    height: 100px;
+    display: block;
+    margin: 5px auto;
+    padding-bottom: 5px;
+}
+
+#portfolio {
+    background-color: #2962ff;
+    padding: 80px;
+    border-left: 1px solid black;
+}
+#portfolio h2 {
+    font-size: 36px;
+    color: white;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+/** EXPERIENCE **/
+
+.expbox {
+    background-color: #ff9800;
+    width: 400px; 
+    height: 440px;
+    display: inline-block;  
+    padding: 10px 3px;
+    border: 5px solid #ff9800;
+    border-radius: 10px;
+    margin: 0px 50px 20px 50px;
+    box-shadow: 5px 5px 2px #cccccc;
+}
+.expbox h3, p { 
+    color: white;
+    padding-top: 3px;
+}
+.expbox h3 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.expbox p {
+    padding: 10px 5px 0px 5px;
+}
+.expimg {
+    height: 120px;
+    display: block;
+    margin: 5px auto;
+    padding-bottom: 10px;
+}
+
+#experience {
+    background-color: white;
+    padding: 80px;
+    border-left: 1px solid black;
+}
+#experience h2 {
+    font-size: 36px;
+    color: #2e2e2e;
+    text-align: left;
+    padding-bottom: 30px;
+}
+#tfafix p {
+    padding: 30px 5px 30px 5px;
+}
+
+/** EDUCATION **/
+.edbox {
+    background-color: white;
+    width: 460px; 
+    height: 250px;
+    display: inline-block;  
+    padding: 10px 3px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 0px 70px 20px 70px;
+    box-shadow: 5px 5px 2px #f57c00;
+}
+.edbox h3, h4 { 
+    color: #212121;
+    padding-top: 3px;
+}
+.edbox h3, h4 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.edbox p {
+    padding: 10px 5px 0px 5px;
+}
+.edimg {
+    height: 120px;
+    display: block;
+    margin: 5px auto;
+    padding-bottom: 10px;
+}
+
+#education {
+    background-color: #ff9800;
+    padding: 80px;
+    border-left: 1px solid black;
+}
+#education h2 {
+    font-size: 36px;
+    color: white;
+    text-align: left;
+    padding-bottom: 30px;
+}
