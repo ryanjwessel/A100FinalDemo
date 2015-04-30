@@ -2,9 +2,9 @@ $(document).ready (function () {
  $(window).scroll (function () {
     var sT = $(this).scrollTop();
         if (sT >= 20) {
-            $('.butImNotAWrapper').addClass('mask')
+            $('.navbar-default').addClass('mask')
         }else {
-            $('.butImNotAWrapper').removeClass('mask')
+            $('.navbar-default').removeClass('mask')
         }
   })
 })

@@ -74,12 +74,12 @@ p, li {
 
 .navbar-default {
   height: 100px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #333333;
   box-shadow: 0px 2px 5px rgba(33, 33, 33, 1.0);
   border-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
-    color: black;
+    color: white;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #FFD740;
@@ -95,13 +95,10 @@ p, li {
   margin-right: -30px;
 }
 .mask {
-    background-color: rgba(255,255,255,0.95);
+    background-color: #3E0394;
 }
 .butImNotAWrapper {
     transition: all 1s;
-}
-.iAmAWrapper {
-    background-color: white;
 }
 /* HEADER */
 .wHeader img {
@@ -222,10 +219,10 @@ a.email:hover {
 
 /** RESUME SECTION **/
 .resumePage {
-    background-color: #E6E6E6;
+    background-color: white;
 }
 .paper {
-    margin: 150px 50px;
+    margin: 120px 50px;
     box-shadow: 3px 3px 5px #333333;
     border: 1px solid black;
     padding: 0px 14px 0px 14px;
@@ -236,16 +233,16 @@ a.email:hover {
     padding: 100px 0px;
     border-left: 1px solid black;
     border-top: 0.5px solid black;
-    background-color: white;
+    background-color: #3E0394;
 }
 #about h1, h2, a {
-    color: #101010;
+    color: white;
     text-decoration: none;
     text-align: center;
 }
 #about h1 {
     font-size: 72px;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px #250259;
     padding-bottom: 12.5px;
 }
 #about h2 {
@@ -254,7 +251,7 @@ a.email:hover {
     text-shadow: 1px 1px 2px grey;
 }
 #about a:hover {
-    color: #808080;
+    color: #FFD740;
     text-decoration: none;
 }
 
@@ -307,7 +304,7 @@ a.email:hover {
     border: 5px solid white;
     border-radius: 10px;
     margin: 0px 30px 20px 30px;
-    box-shadow: 5px 5px 2px #1565C0;
+    box-shadow: 5px 5px 2px #998126;
 }
 .portbox h3 { 
     text-align: center; 
@@ -331,7 +328,7 @@ a.email:hover {
 }
 
 #portfolio {
-    background-color: #2962ff;
+    background-color: #FFD740;
     padding: 80px;
     border-left: 1px solid black;
 }
@@ -345,12 +342,12 @@ a.email:hover {
 /** EXPERIENCE **/
 
 .expbox {
-    background-color: #ff9800;
+    background-color: #4d4d4d;
     width: 400px; 
     height: 440px;
     display: inline-block;  
     padding: 10px 3px;
-    border: 5px solid #ff9800;
+    border: 5px solid #4d4d4d;
     border-radius: 10px;
     margin: 0px 50px 20px 50px;
     box-shadow: 5px 5px 2px #cccccc;
@@ -399,7 +396,7 @@ a.email:hover {
     border: 5px solid white;
     border-radius: 10px;
     margin: 0px 70px 20px 70px;
-    box-shadow: 5px 5px 2px #f57c00;
+    box-shadow: 5px 5px 2px #2E2E2E;
 }
 .edbox h3, h4 { 
     color: #212121;
@@ -421,7 +418,7 @@ a.email:hover {
 }
 
 #education {
-    background-color: #ff9800;
+    background-color: #4d4d4d;
     padding: 80px;
     border-left: 1px solid black;
 }
